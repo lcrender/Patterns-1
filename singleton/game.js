@@ -14,8 +14,24 @@ class Game {
 
     }
 
-    start() {return console.table(this.players)}
-   
+    start() {
+        marcador.log('Starting Game...');
+
+        console.table(this.players.sort(function (a, b) {
+            if (a.points > b.points) {
+              return -1;
+            }
+            if (a.points < b.points) {
+              return 1;
+            }
+            // a must be equal to b
+            return 0;
+          }))
+
+        return marcador.log(`And the winner is...: ${this.players[0].name} with ${this.players[0].points} points.`)
+          
+    }
+ 
 }
 
 module.exports = Game;

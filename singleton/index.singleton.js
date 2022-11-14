@@ -10,7 +10,6 @@ var luis = new Player('Luis', 330)
 var bestpoint = new Game('Best Point Game', [walter,martin,luis])
 
 bestpoint.start()
-marcador.log('Starting Game...');
 
 console.log(`${marcador.count} logs total`);
 //marcador.logs.map(log => console.log(`   ${log.message}`));
