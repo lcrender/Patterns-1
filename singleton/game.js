@@ -8,10 +8,6 @@ class Game {
         this.name = name;
         this.players = players;
         marcador.log(`New Game: ${name} has ${players.length} players online.`);
-
-        
-        
-
     }
 
     start() {
