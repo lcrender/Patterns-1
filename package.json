@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lcrender/Patterns-1#readme",
   "dependencies": {
+    "amqplib": "^0.10.3",
     "async": "^3.2.4"
   }
 }

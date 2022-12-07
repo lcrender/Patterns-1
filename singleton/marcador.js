@@ -1,31 +1,26 @@
 class Marcador {
-
     constructor() {
         this.logs = [];
     }
-
-    getCount() {return this.logs.length;}
-
+    get count() {return this.logs.length;}
     log(message) {
         const timestamp = new Date().toISOString();
         this.logs.push({ message, timestamp });
-        console.log(`${timestamp} - ${message}`);
+        console.log(`
+${message} - ${timestamp}
+`);
     }
-
 }
 
 class Singleton {
-
     constructor() {
         if (!Singleton.instance) {
             Singleton.instance = new Marcador();
         }
     }
-  
     getInstance() {
         return Singleton.instance;
     }
-  
   }
 
-module.exports = Marcador;
+module.exports = Singleton;
