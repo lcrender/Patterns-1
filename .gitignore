@@ -7,3 +7,6 @@ package-lock.json
 package.json
 read.js
 observer/ej
+observer/mensajes.js
+observer/events.js
+
