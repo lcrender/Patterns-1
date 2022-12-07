@@ -1,17 +1,16 @@
-temas => suscribir usuarios
+<ul>
+<li>Crear ususarios con la classe USER, No se podran crear 2 usuarios con el mismo nombre.</li>
+<li>Crear temas con las classe TEMA</li>
+</ul>
+<p>La classe TEMA lleva las funciones:</p>
 
-usuarios => mensaje a un tema
+<p>suscribe("nombre");<br>
+Suscribe al usuario al tema</p>
 
-tema => envia mensaje por consola
-        mostrar usuarios suscriptos al tema
+<p>unsuscribe("nombre")<br>
+Desuscribe al usuario al tema</p>
 
-un tema con un usuario
-un tema con 2 usuarios
-
-(nuevo tema ("informatica"))
-
-tema 1 informatica
-usuarios = []
-
+<p>msg("nombre", "mensaje")<br>
+Envia un mensaje a los suscriptores del tema</p>
     
 
